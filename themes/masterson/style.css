@@ -78,12 +78,8 @@ ul#nav li:not(:first-of-type):not(:last-of-type), ul#nav li:not(:first-of-type):
 
 ul#nav li ul {
 	margin: 10px 0px 0px;
-	display: none;
 	background: black;
-}
-
-ul#nav li:hover ul { 
-	display: block;
+	display: none;
 }
 
 ul#nav li ul li {
