@@ -113,14 +113,14 @@ ul#nav li ul li a {
 	margin-bottom: 20px;
 }
 
-img.alignright	{
+img.alignright.size-medium, img.alignright.size-full	{
 	float: right;
-	margin-left: 100%; /* This prevents text from wrapping images */ 
+	margin-left: 360px; /* This prevents text from wrapping images */ 
 }
 
-img.alignleft	{
+img.alignleft.size-medium, img.alignleft.size-full	{
 	float: left;
-	margin-right: 100%; /* This prevents text from wrapping images */ 
+	margin-right: 360px; /* This prevents text from wrapping images */ 
 }
 
 img.alignnone {
