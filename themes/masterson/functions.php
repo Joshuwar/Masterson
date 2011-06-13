@@ -43,6 +43,13 @@ function add_stylesheets() { ?>
 add_action('wp_head', 'add_stylesheets');
 
 function add_scripts() { ?>
+	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/mootools-core-1.3.2-full-compat-yc.js"></script>
+	
+	<!--[if (gte IE 6)&(lte IE 8)]>
+	  <script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/selectivizr-min.js"></script>
+	  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+	<![endif]--> 
+	
 	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.scrollTo-1.4.2-min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.slideViewerPro.1.0.js"></script>
 <?php }
