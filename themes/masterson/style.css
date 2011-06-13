@@ -39,6 +39,7 @@ a, .accentColour {
 	letter-spacing: 0.1em;
 	background: black;
 	position: absolute;
+	z-index: 1;
 }
 
 ul#nav {
@@ -59,13 +60,14 @@ ul#nav li {
 	width: 33.3%;
 	float: left;
 	text-align: center;
+	background: black;
 }
 
-ul#nav li:first-of-type, ul#nav li:first-of-type ul li {
+ul#nav li:first-of-type, ul#nav li:first-of-type ul li, ul#nav li:first-of-type ul li:not(:first-of-type):not(:last-of-type) {
 	text-align: left;
 }
 
-ul#nav li:last-of-type, ul#nav li:last-of-type ul li {
+ul#nav li:last-of-type, ul#nav li:last-of-type ul li, ul#nav li:last-of-type ul li:not(:first-of-type):not(:last-of-type) {
 	text-align: right;
 }
 
@@ -77,6 +79,7 @@ ul#nav li:not(:first-of-type):not(:last-of-type), ul#nav li:not(:first-of-type):
 ul#nav li ul {
 	margin: 10px 0px 0px;
 	display: none;
+	background: black;
 }
 
 ul#nav li:hover ul { 
@@ -107,6 +110,7 @@ ul#nav li ul li a {
 	position: absolute;
 	letter-spacing: 0.08em;
 	word-spacing: 0.1em;
+	z-index: 0;
 }
 
 .content img {
