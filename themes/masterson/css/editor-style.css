@@ -1,0 +1,39 @@
+.mceContentBody { 
+	color: #fff; 
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; 
+	font-size: 14px; 
+	line-height: 20px; 
+	background-color: black;
+}
+
+.mceContentBody a, .mceContentBody a:visited { 
+	background: none; 
+	color: #c8df00;
+	text-decoration: underline; 
+}
+
+.mceContentBody a:hover { 
+	background: none; 
+	color: rgb(60, 140, 180); 
+	text-decoration: underline; 
+}
+
+.mceContentBody img.alignright {
+	float: right;
+	margin-left: 100%;
+	margin-bottom: 20px;
+} 
+
+.mceContentBody img.alignleft {
+	float: left;
+	margin-right: 100%;
+	margin-bottom: 20px;
+} 
+
+.mceContentBody img.alignnone {
+	margin-right: 20px;
+}
+
+html {
+	background: black;
+}

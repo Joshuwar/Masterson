@@ -1,0 +1,129 @@
+/*   
+Theme Name: Christopher Masterson Portfolio
+Description: Theme for Christopher Masterson's Portfolio
+Author: J&J
+Author URI: http://withjandj.com/
+Template: Scaffolding
+Version: 1.0
+*/
+
+
+/* 
+'Spring green' - #c8df00;
+*/
+
+body {
+	background-color: black;
+	color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, Sans; 
+}
+
+a, .accentColour {
+	color: #c8df00;
+}
+
+#wrapper {
+	width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+
+/* ------ Menu */
+
+
+#navContainer {
+	padding-top: 30px;
+	overflow: hidden;
+	padding-bottom: 20px;
+	letter-spacing: 0.1em;
+	background: black;
+	position: absolute;
+}
+
+ul#nav {
+	margin:0;
+}
+
+ul#nav li {
+	list-style: none;
+}	
+
+ul#nav li a {
+	color: white;
+	text-decoration: none;
+}
+
+ul#nav li {
+	font-size: 30px;
+	width: 33.3%;
+	float: left;
+	text-align: center;
+}
+
+ul#nav li:first-of-type, ul#nav li:first-of-type ul li {
+	text-align: left;
+}
+
+ul#nav li:last-of-type, ul#nav li:last-of-type ul li {
+	text-align: right;
+}
+
+ul#nav li:not(:first-of-type):not(:last-of-type), ul#nav li:not(:first-of-type):not(:last-of-type) ul li {
+	text-align: center;
+}
+
+
+ul#nav li ul {
+	margin: 10px 0px 0px;
+	display: none;
+}
+
+ul#nav li:hover ul { 
+	display: block;
+}
+
+ul#nav li ul li {
+	font-size: 20px;
+	line-height: 30px;
+	float: none;
+	width: auto;
+	text-align: inherit;
+}
+
+ul#nav li a:hover {
+	text-decoration: underline;
+}
+
+ul#nav li ul li a {
+	width: 100%;
+	display: block;
+}
+
+/* ------ content section */
+
+.content {
+	top: 120px;
+	position: absolute;
+	letter-spacing: 0.08em;
+	word-spacing: 0.1em;
+}
+
+.content img {
+	margin-bottom: 20px;
+}
+
+img.alignright	{
+	float: right;
+	margin-left: 100%; /* This prevents text from wrapping images */ 
+}
+
+img.alignleft	{
+	float: left;
+	margin-right: 100%; /* This prevents text from wrapping images */ 
+}
+
+img.alignnone {
+	margin-right: 20px; 
+}
+
