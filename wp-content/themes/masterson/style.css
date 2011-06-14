@@ -166,6 +166,11 @@ img.alignnone {
 	top: 0px;
 }
 
+.content #jwplayer-1-div, .content #jwplayer-2-div, .content #jwplayer-3-div, .content #jwplayer-4-div, .content #jwplayer-5-div {
+	margin-bottom: 20px;
+}
+
+
 /* for the word flow box */
 
 div#words {
