@@ -94,12 +94,5 @@ $(document).ready(function() {
 });
 
 $(window).bind("load", function() {
-	// activate image carousel
-	$('#slideshow').slideViewerPro({
-		galBorderWidth: 0,
-		typo: true,
-		thumbsActiveBorderColor: '#9cadc7',
-		buttonsTextColor: '#9cadc7'
-		// autoslide: true
-	});
+	
 });
