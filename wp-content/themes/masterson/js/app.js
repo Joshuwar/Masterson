@@ -1,5 +1,5 @@
 /* home page image rotation */
-var HOME_IMAGE_ROTATION_PAUSE = 4000,
+var HOME_IMAGE_ROTATION_PAUSE = 2000,
 	home_image_count,
 	nextImageCount = function() {
 		if(!home_image_count) {
