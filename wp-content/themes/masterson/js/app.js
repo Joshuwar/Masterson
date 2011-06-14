@@ -80,7 +80,7 @@ $(document).ready(function() {
 		$('.content').stop().fadeTo(ANIMATION_DURATION, 1);
 		return false;
 	}).click(function(e) {
-		var href = $(this).children('a').attr('href');
+		var href = $(e.target).attr('href');
 		if(!href) {
 			return false;
 		}
