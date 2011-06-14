@@ -42,11 +42,39 @@ function add_scripts() { ?>
 
 add_action('wp_footer', 'add_scripts');
 
-function slideshow_func() {
-	get_template_part('snippets/slideshow');
-}
+function home_rotate($size = thumbnail) {
 
-add_shortcode('slideshow', 'slideshow_func');
+	if($images = get_children(array(
+		'post_parent'    => get_the_ID(),
+		'post_type'      => 'attachment',
+		'numberposts'    => -1, // show all
+		'post_status'    => null,
+		'post_mime_type' => 'image',
+		'order'          => 'ASC',
+		'orderby'        => 'menu_order',
+	))) {			
+	
+		$i=0;
+		foreach($images as $image) {
+			$attimg  = wp_get_attachment_image_src($image->ID,$size);
+			$attimgurl = $attimg[0];
+			$atturl   = wp_get_attachment_url($image->ID);
+			$attlink  = get_attachment_link($image->ID);
+			$postlink = get_permalink($image->post_parent);
+			$atttitle = apply_filters('the_title',$image->post_title);
+			$attcontent = ($image->post_content);
+			if($i==0) {
+				echo '<img class="primary home" src="'.$attimgurl.'"/>';
+			} else {
+				echo '<img src="'.$attimgurl.'"/>';
+			}
+			$i++;
+		}
+		echo '<span id="imagecount">'.count($images).'</span>';
+	}
+	return count($images);
+	
+}
 
 function date_func() {
 	echo '&copy;'.date('Y');

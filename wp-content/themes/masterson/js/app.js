@@ -1,4 +1,31 @@
-var ANIMATION_DURATION = 400,
+/* home page image rotation */
+var HOME_IMAGE_ROTATION_PAUSE = 4000,
+	home_image_count,
+	nextImageCount = function() {
+		if(!home_image_count) {
+			home_image_count = parseInt($('#imagecount').text(),10);
+		}
+		if(!nextImageCount.count) {
+			nextImageCount.count = 0;
+		}
+		nextImageCount.count = (nextImageCount.count + 1) % home_image_count;
+		return nextImageCount.count;
+	},
+	changeHomeImage = function() {
+		if(!$('img.home').length) {
+			return false;
+		}
+		var $images = $('.imagebox img'),
+			i = nextImageCount();
+		$images.filter(":visible").fadeOut(function() {
+			window.setTimeout(function() { // adding a pause so IE6 can get its act together
+				$images.eq(i).fadeIn(function() {
+					window.setTimeout(changeHomeImage, HOME_IMAGE_ROTATION_PAUSE);
+				});
+			},500);
+		});
+	},
+	ANIMATION_DURATION = 400,
 	createWordFlow = function(selector) {
 		/*
 			get the words, split them into three lines
@@ -94,5 +121,6 @@ $(document).ready(function() {
 });
 
 $(window).bind("load", function() {
-	
+	/* homepage image rotation start */
+	window.setTimeout(changeHomeImage, HOME_IMAGE_ROTATION_PAUSE);
 });
