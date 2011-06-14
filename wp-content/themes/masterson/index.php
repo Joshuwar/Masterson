@@ -23,5 +23,5 @@ wp_nav_menu( array(
 	endwhile;
 	endif; ?>
 </div>
-
+<div id="scrollAlert"><img src="<?php bloginfo( 'stylesheet_directory' ); ?>/images/pixel-arrow.png" /></div>
 <?php get_footer(); ?>

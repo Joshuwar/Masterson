@@ -86,5 +86,9 @@ $(document).ready(function() {
 	});
 	
 	createWordFlow('#words');
+	
+	if($(window).height()<$(document).height()) {
+		$('#scrollAlert').show();
+	}
 });
 

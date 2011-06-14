@@ -182,3 +182,12 @@ div.line {
 span.sentence {
 	position: relative;
 }
+
+/* scrollAlert box */
+#scrollAlert {
+	float: left;
+	position: absolute;
+	bottom: 20px;
+	left: -60px;
+	display: none;
+}
