@@ -21,12 +21,23 @@ global $words;
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 	<div class="right grid6col alignright miniContent">
+	
+	<?php if(is_front_page()) { ?>
+			
+		<div class="left imagebox">
+			<?php $count = home_rotate('slideshow-img'); ?>
+		</div>
+		
+	<?php } else { ?>
+	
 		<h2 class="accentColour"><?php the_title(); ?></h2>
 		<?php if($words) { ?>
 			<div id="words"><?php the_content(); ?></div>
 		<?php } else {
 			the_content();
 		} ?>
+
+	<?php } ?>
 	</div>
 	
 <?php
