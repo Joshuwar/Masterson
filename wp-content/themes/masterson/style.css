@@ -196,3 +196,8 @@ span.sentence {
 	left: -60px;
 	display: none;
 }
+
+/* homepage carousel */
+#imagecount {
+	display: none;
+}

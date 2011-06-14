@@ -17,7 +17,7 @@ var HOME_IMAGE_ROTATION_PAUSE = 4000,
 		}
 		var $images = $('.imagebox img'),
 			i = nextImageCount();
-		$images.filter(":visible").fadeOut(function() {
+		$images.filter(":visible").eq(0).fadeOut(function() {
 			window.setTimeout(function() { // adding a pause so IE6 can get its act together
 				$images.eq(i).fadeIn(function() {
 					window.setTimeout(changeHomeImage, HOME_IMAGE_ROTATION_PAUSE);
