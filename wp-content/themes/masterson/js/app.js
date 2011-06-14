@@ -7,7 +7,7 @@ var ANIMATION_DURATION = 400,
 		
 		*/
 		var words = [],
-			$words = $(selector),
+			$words = $(selector).hide(),
 			$word,
 			i = 0,
 			lines = [[],[],[]],
@@ -49,7 +49,7 @@ var ANIMATION_DURATION = 400,
 				lines[i].push(words.pop())
 				i = (i+1) % 3;
 			}
-			$words.empty().html(html);
+			$words.empty().html(html).show();
 			/*
 				fill each sentence span with a sentence, animate for 2 seconds, remove
 			*/
