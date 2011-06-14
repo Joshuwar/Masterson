@@ -24,9 +24,10 @@ function custom_editor_style( $url ) {
 add_filter( 'mce_css', 'custom_editor_style' );
 
 function add_stylesheets() { ?>
-	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,bold' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,bold' rel='stylesheet' type='text/css' />
+	<link href='<?php bloginfo( 'stylesheet_directory' ); ?>/css/svwp_style.css' rel='stylesheet' type='text/css' />
 <?php }
 
 add_action('wp_head', 'add_stylesheets');
@@ -38,6 +39,7 @@ function add_scripts() { ?>
 	  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
 	<![endif]--> 
 	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.hoverIntent.minified.js"></script>
+	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.slideViewerPro.1.0.js"></script>
 <?php }
 
 add_action('wp_footer', 'add_scripts');

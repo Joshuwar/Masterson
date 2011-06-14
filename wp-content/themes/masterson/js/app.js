@@ -80,7 +80,8 @@ $(document).ready(function() {
 		$('.content').stop().fadeTo(ANIMATION_DURATION, 1);
 		return false;
 	}).click(function(e) {
-		if($navLinks.children().index(e.target)!==-1) {
+		var href = $(this).children('a').attr('href');
+		if(!href) {
 			return false;
 		}
 	});
@@ -92,3 +93,13 @@ $(document).ready(function() {
 	}
 });
 
+$(window).bind("load", function() {
+	// activate image carousel
+	$('#slideshow').slideViewerPro({
+		galBorderWidth: 0,
+		typo: true,
+		thumbsActiveBorderColor: '#9cadc7',
+		buttonsTextColor: '#9cadc7'
+		// autoslide: true
+	});
+});
