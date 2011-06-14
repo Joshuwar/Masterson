@@ -31,6 +31,59 @@ $(document).ready(function() {
 			assign different speeds to the three carousels
 	
 	*/
-	
+	var words = [],
+		$words = $('#words'),
+		$word,
+		i = 0,
+		lines = [[],[],[]],
+		width,
+		html = '<div class="line"><span class="sentence"></span></div>' + 
+			'<div class="line"><span class="sentence"></span></div>' +
+			'<div class="line"><span class="sentence"></span></div>',
+		lineWidth,
+		randomRange = function(min,max) {
+			return Math.random()*(max-min)+min;
+		},
+		animateLine = function(i,j) {
+			var line = lines[i],
+				$word = $words.find('span.sentence').eq(i).html(line[j]),
+				wordWidth = $word.width();
+			$word.css({
+				left: lineWidth,
+				fontSize: randomRange(1,2)+'em'
+			}).animate({
+				left: 0
+			}, 500, function() {
+				window.setTimeout(function() {
+					$word.animate({
+						left: -lineWidth
+					}, 500, function() {
+						j = (j+1) % line.length;
+						window.setTimeout(function() {
+							animateLine(i,j);
+						}, randomRange(300,700));
+					});
+				}, 1000);
+			});
+		};
+	$words.find('p').each(function() {
+		words.push($(this).html());
+	});
+	while(words.length) {
+		lines[i].push(words.pop())
+		i = (i+1) % 3;
+	}
+	$words.empty().html(html);
+	/*
+		fill each sentence span with a sentence, animate for 2 seconds, remove
+	*/
+	lineWidth = $words.find('span.sentence').eq(0).parent().width();
+	window.setTimeout(function() {
+		animateLine(0,0);
+	}, randomRange(300,700));
+	animateLine(1,0);
+	window.setTimeout(function() {
+		animateLine(2,0);
+	}, randomRange(300,700));
 });
 

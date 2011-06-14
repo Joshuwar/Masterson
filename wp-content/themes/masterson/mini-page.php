@@ -14,6 +14,7 @@ wp_nav_menu( array(
 	'theme_location' => 'main_menu', 
 	'menu_id' => 'nav'
 ) );
+global $words;
 ?>
 
 <div class="jbasewrap content miniPage">
@@ -21,7 +22,11 @@ wp_nav_menu( array(
 	
 	<div class="right grid6col alignright miniContent">
 		<h2 class="accentColour"><?php the_title(); ?></h2>
-		<?php the_content(); ?>
+		<?php if($words) { ?>
+			<div id="words"><?php the_content(); ?></div>
+		<?php } else {
+			the_content();
+		} ?>
 	</div>
 	
 <?php

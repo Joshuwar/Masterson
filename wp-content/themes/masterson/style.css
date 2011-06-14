@@ -166,4 +166,19 @@ img.alignnone {
 	top: 0px;
 }
 
+/* for the word flow box */
 
+div#words {
+	height: 180px;
+}
+
+div.line {
+	height: 60px;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+span.sentence {
+	position: relative;
+}
