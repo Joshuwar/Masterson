@@ -25,5 +25,12 @@ $(document).ready(function() {
 		}
 	});
 	
+	/*
+		get the words, split them into three lines
+		make each line into a carousel
+			assign different speeds to the three carousels
+	
+	*/
+	
 });
 
