@@ -1,3 +1,9 @@
+<?php 
+
+// Template Name: mini-page
+
+?>
+
 <?php get_header(); ?>
 
 <?php
@@ -9,17 +15,16 @@ wp_nav_menu( array(
 	'menu_id' => 'nav'
 ) );
 ?>
-<div class="jbasewrap content">
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<?php if(is_front_page()) { ?>
-			
-		<?php the_content(); ?>		
-	
-	<?php } else { ?>
 
-<h2 class="accentColour"><?php the_title(); ?></h2>
-<?php the_content(); ?>
-<?php 	}
+<div class="jbasewrap content miniPage">
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	
+	<div class="right grid6col alignright miniContent">
+		<h2 class="accentColour"><?php the_title(); ?></h2>
+		<?php the_content(); ?>
+	</div>
+	
+<?php
 	endwhile;
 	endif; ?>
 </div>

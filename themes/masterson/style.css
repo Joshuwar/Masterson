@@ -12,10 +12,15 @@ Version: 1.0
 'Spring green' - #c8df00;
 */
 
+html {
+	height: 100%;
+}
+
 body {
 	background-color: black;
 	color: white;
 	font-family: "Helvetica Neue", Helvetica, Arial, Sans; 
+	height: 100%;
 }
 
 a, .accentColour {
@@ -26,6 +31,7 @@ a, .accentColour {
 	width: 1000px;
 	position: relative;
 	margin: auto;
+	height: 100%;
 }
 
 
@@ -139,3 +145,25 @@ img.alignnone {
 .content h5 {
 	font-size: 1em;
 }
+
+.content ul {
+	margin-top: -20px;
+}
+
+
+.miniPage {
+	height: 100%;
+	position: relative;
+}
+
+.miniContent {
+	position: absolute;
+	bottom: 1%;
+	right: 0px;
+}
+
+.content.miniPage {
+	top: 0px;
+}
+
+
