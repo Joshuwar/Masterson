@@ -19,6 +19,10 @@ $(document).ready(function() {
 			$('.content').fadeTo(ANIMATION_DURATION, 1);
 		}
 		return false;
+	}).click(function(e) {
+		if($navLinks.children().index(e.target)!==-1) {
+			return false;
+		}
 	});
 	
 });
