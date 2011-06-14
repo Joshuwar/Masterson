@@ -201,3 +201,11 @@ span.sentence {
 #imagecount {
 	display: none;
 }
+
+.js .imagebox img {
+	display: none;
+}
+
+.js img.primary {
+	display: block;
+}

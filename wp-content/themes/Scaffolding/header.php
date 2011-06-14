@@ -43,6 +43,9 @@
 				height: <?php echo HEADER_IMAGE_HEIGHT; ?>px;
 			}
 		</style>
+		<script type="text/javascript">
+			document.documentElement.className = "js";
+		</script>
 		<?php wp_head(); ?>
 	</head>
 	<body>
