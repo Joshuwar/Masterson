@@ -114,6 +114,7 @@ h2 {
 }
 
 .content {
+	width: 1020px; /* so that rows of images wrap at 4 instances*/
 	top: 120px;
 	position: absolute;
 	letter-spacing: 0.08em;
@@ -132,6 +133,7 @@ h2 {
 img.alignright.size-medium, img.alignright.size-full	{
 	float: right;
 	margin-left: 360px; /* This prevents text from wrapping images */ 
+	margin-right: 20px; /* cancels out width of .content */
 }
 
 img.alignleft.size-medium, img.alignleft.size-full	{
@@ -175,6 +177,7 @@ img.alignnone {
 
 .content.miniPage {
 	top: 0px;
+	width: 1000px;
 }
 
 .content #jwplayer-1-div, .content #jwplayer-2-div, .content #jwplayer-3-div, .content #jwplayer-4-div, .content #jwplayer-5-div {
