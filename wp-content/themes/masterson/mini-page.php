@@ -21,7 +21,7 @@ global $words;
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 	<?php if(is_front_page()) { ?>
-	<div class="right grid6col alignright miniContent">
+	<div class="right grid6col aligncenter miniContent">
 		<div class="imagebox">
 			<?php $count = home_rotate('slideshow-img'); ?>
 		</div>
