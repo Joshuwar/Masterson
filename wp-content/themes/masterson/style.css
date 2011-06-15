@@ -113,6 +113,10 @@ h2 {
 	font-size: 20px;
 }
 
+.content p {
+	margin-right: 20px;
+}
+
 .content {
 	width: 1020px; /* so that rows of images wrap at 4 instances*/
 	top: 120px;
