@@ -62,24 +62,20 @@ ul#nav li a {
 	text-decoration: none;
 }
 
-ul#nav li {
+ul#nav li, #wrapper ul#nav li ul li {
 	font-size: 30px;
-	width: 33.3%;
+	width: 408px;
 	float: left;
-	text-align: center;
+	text-align: left;
 	background: black;
 }
 
-ul#nav li:first-of-type, ul#nav li:first-of-type ul li, ul#nav li:first-of-type ul li:not(:first-of-type):not(:last-of-type) {
-	text-align: left;
+ul#nav li:first-of-type, ul#nav li:first-of-type ul li {
+	width: 400px;
 }
 
-ul#nav li:last-of-type, ul#nav li:last-of-type ul li, ul#nav li:last-of-type ul li:not(:first-of-type):not(:last-of-type) {
-	text-align: right;
-}
-
-ul#nav li:not(:first-of-type):not(:last-of-type), ul#nav li:not(:first-of-type):not(:last-of-type) ul li {
-	text-align: center;
+ul#nav li:last-of-type, ul#nav li:last-of-type ul li {
+	width: 192px;
 }
 
 
@@ -89,7 +85,7 @@ ul#nav li ul {
 	display: none;
 }
 
-ul#nav li ul li {
+#wrapper ul#nav li ul li {
 	font-size: 20px;
 	line-height: 30px;
 	float: none;
