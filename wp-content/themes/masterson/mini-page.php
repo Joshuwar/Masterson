@@ -28,12 +28,12 @@ global $words;
 	</div>
 	<?php } else { ?>
 	<div class="right grid6col alignright miniContent">
-		<h2 class="accentColour"><?php the_title(); ?></h2>
 		<?php if($words) { ?>
 			<div id="words"><?php the_content(); ?></div>
-		<?php } else {
-			the_content();
-		} ?>
+		<?php } else { ?>
+			<h2 class="accentColour"><?php the_title(); ?></h2>
+			<?php the_content(); ?>
+		<?php } ?>
 	</div>
 	<?php } ?>
 	
