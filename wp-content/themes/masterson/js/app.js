@@ -1,5 +1,5 @@
 /* home page image rotation */
-var HOME_IMAGE_ROTATION_PAUSE = 2000,
+var HOME_IMAGE_ROTATION_PAUSE = 3000,
 	home_image_count,
 	nextImageCount = function() {
 		if(!home_image_count) {
@@ -22,7 +22,7 @@ var HOME_IMAGE_ROTATION_PAUSE = 2000,
 				$images.eq(i).fadeIn(function() {
 					window.setTimeout(changeHomeImage, HOME_IMAGE_ROTATION_PAUSE);
 				});
-			},500);
+			},10);
 		});
 	},
 	ANIMATION_DURATION = 400,

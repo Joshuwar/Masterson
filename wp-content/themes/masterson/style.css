@@ -18,7 +18,7 @@ html {
 
 body {
 	background-color: black;
-	color: white;
+	color: #F2F2F2;
 	font-family: "Helvetica Neue", Helvetica, Arial, Sans; 
 	height: 100%;
 }
@@ -57,7 +57,7 @@ ul#nav li {
 }	
 
 ul#nav li a {
-	color: white;
+	color: #F2F2F2;
 	text-decoration: none;
 }
 
@@ -97,7 +97,8 @@ ul#nav li ul li {
 }
 
 ul#nav li a:hover {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+	color: #c8df00;
 }
 
 ul#nav li ul li a {
@@ -117,6 +118,10 @@ ul#nav li ul li a {
 
 .content img {
 	margin-bottom: 20px;
+}
+
+.aligncenter {
+	text-align: center;
 }
 
 img.alignright.size-medium, img.alignright.size-full	{
