@@ -118,7 +118,7 @@ h2 {
 }
 
 .content p {
-	margin-right: 20px;
+	/*margin-right: 20px;*/ /* removed to allow four images (with right-margin) per line */
 }
 
 .content {
