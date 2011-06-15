@@ -19,7 +19,8 @@ html {
 body {
 	background-color: black;
 	color: #F2F2F2;
-	font-family: "Helvetica Neue", Helvetica, Arial, Sans; 
+	font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue', Helvetica, Arial, Sans; 
+	font-weight: 300;
 	height: 100%;
 }
 
@@ -61,24 +62,20 @@ ul#nav li a {
 	text-decoration: none;
 }
 
-ul#nav li {
+ul#nav li, #wrapper ul#nav li ul li {
 	font-size: 30px;
-	width: 33.3%;
+	width: 408px;
 	float: left;
-	text-align: center;
+	text-align: left;
 	background: black;
 }
 
-ul#nav li:first-of-type, ul#nav li:first-of-type ul li, ul#nav li:first-of-type ul li:not(:first-of-type):not(:last-of-type) {
-	text-align: left;
+ul#nav li:first-of-type, ul#nav li:first-of-type ul li {
+	width: 400px;
 }
 
-ul#nav li:last-of-type, ul#nav li:last-of-type ul li, ul#nav li:last-of-type ul li:not(:first-of-type):not(:last-of-type) {
-	text-align: right;
-}
-
-ul#nav li:not(:first-of-type):not(:last-of-type), ul#nav li:not(:first-of-type):not(:last-of-type) ul li {
-	text-align: center;
+ul#nav li:last-of-type, ul#nav li:last-of-type ul li {
+	width: 192px;
 }
 
 
@@ -88,7 +85,7 @@ ul#nav li ul {
 	display: none;
 }
 
-ul#nav li ul li {
+#wrapper ul#nav li ul li {
 	font-size: 20px;
 	line-height: 30px;
 	float: none;
@@ -108,11 +105,20 @@ ul#nav li ul li a {
 
 /* ------ content section */
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
 h2 {
 	font-size: 20px;
 }
 
+.content p {
+	margin-right: 20px;
+}
+
 .content {
+	width: 1020px; /* so that rows of images wrap at 4 instances*/
 	top: 120px;
 	position: absolute;
 	letter-spacing: 0.08em;
@@ -131,6 +137,7 @@ h2 {
 img.alignright.size-medium, img.alignright.size-full	{
 	float: right;
 	margin-left: 360px; /* This prevents text from wrapping images */ 
+	margin-right: 20px; /* cancels out width of .content */
 }
 
 img.alignleft.size-medium, img.alignleft.size-full	{
@@ -144,7 +151,8 @@ img.alignnone {
 
 .content h3 {
 	font-size: 1.3em;
-	font-weight: bold;
+	font-weight: 300;
+	text-transform: lowercase;
 }
 
 .content h4 {
@@ -173,6 +181,7 @@ img.alignnone {
 
 .content.miniPage {
 	top: 0px;
+	width: 1000px;
 }
 
 .content #jwplayer-1-div, .content #jwplayer-2-div, .content #jwplayer-3-div, .content #jwplayer-4-div, .content #jwplayer-5-div {
