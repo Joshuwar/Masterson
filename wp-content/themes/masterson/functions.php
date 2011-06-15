@@ -1,7 +1,7 @@
 <?php
 
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'slideshow-img', 470, 320, false ); 
+add_image_size( 'slideshow-img', 470, 320, false );
 
 function child_theme_init() {
 	add_post_type_support( 'page', 'excerpt' );
