@@ -32,6 +32,7 @@ function add_stylesheets() { ?>
 add_action('wp_head', 'add_stylesheets');
 
 function add_scripts() { ?>
+	<script type="text/javascript" src="http://fast.fonts.com/jsapi/cdb5b18e-534d-421c-a31f-c5dfe25aae34.js"></script>
 	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/mootools-core-1.3.2-full-compat-yc.js"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	  <script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/selectivizr-min.js"></script>
