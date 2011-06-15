@@ -108,6 +108,10 @@ ul#nav li ul li a {
 
 /* ------ content section */
 
+h2 {
+	font-size: 20px;
+}
+
 .content {
 	top: 120px;
 	position: absolute;
@@ -175,6 +179,10 @@ img.alignnone {
 	margin-bottom: 20px;
 }
 
+.content #jwplayer-1_wrapper, .content #jwplayer-2_wrapper, .content #jwplayer-3_wrapper, .content #jwplayer-4_wrapper, .content #jwplayer-5_wrapper {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /* for the word flow box */
 
