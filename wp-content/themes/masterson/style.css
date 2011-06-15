@@ -179,6 +179,10 @@ img.alignnone {
 	right: 0px;
 }
 
+.miniContent p {
+	margin-right: 0;
+}
+
 .content.miniPage {
 	top: 0px;
 	width: 1000px;
