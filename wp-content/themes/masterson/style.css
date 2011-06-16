@@ -41,12 +41,13 @@ a, .accentColour {
 
 #navContainer {
 	top: 20%;
-	overflow: hidden;
+	overflow: visible;
 	padding-bottom: 20px;
 	letter-spacing: 0.1em;
 	background: black;
 	position: absolute;
 	z-index: 1;
+	width: 1100px;
 }
 
 ul#nav {
@@ -75,7 +76,13 @@ ul#nav li:first-of-type, ul#nav li:first-of-type ul li {
 }
 
 ul#nav li:last-of-type, ul#nav li:last-of-type ul li {
-	width: 192px;
+	width: 280px;
+	overflow: visible;
+	white-space: nowrap;
+}
+
+ul#nav li:last-of-type ul li {
+	width: 400px;
 }
 
 
