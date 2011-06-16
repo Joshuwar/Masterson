@@ -1,3 +1,9 @@
+<?php 
+
+// Template Name: no-title-page
+
+?>
+
 <?php get_header(); ?>
 
 <?php
