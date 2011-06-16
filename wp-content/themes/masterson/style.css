@@ -227,9 +227,18 @@ span.sentence {
 	display: none;
 }
 
+
 /* homepage carousel */
+
+
 #imagecount {
 	display: none;
+}
+
+.imagebox {
+	display: table-cell;
+	vertical-align: middle;
+	height: 400px;
 }
 
 .js .imagebox img {
