@@ -299,6 +299,7 @@ span.sentence {
 
 .js .imagebox img {
 	display: none;
+	max-width: 540px;
 }
 
 .js img.primary {
