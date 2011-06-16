@@ -285,6 +285,11 @@ span.sentence {
 	float: right;
 }
 
+.imagebox * {
+	vertical-align: middle;
+	display: inline-block;
+}
+
 .js .imagebox img {
 	display: none;
 }
