@@ -34,7 +34,7 @@ var HOME_IMAGE_ROTATION_PAUSE = 3000,
 		
 		*/
 		var words = [],
-			$words = $(selector).hide(),
+			$words = $(selector),
 			$word,
 			i = 0,
 			lines = [[],[],[]],
@@ -46,13 +46,26 @@ var HOME_IMAGE_ROTATION_PAUSE = 3000,
 			randomRange = function(min,max) {
 				return Math.random()*(max-min)+min;
 			},
+			wordsToSize = function($word) {
+				var words = $word.text(),
+					count = words.split(" ").length,
+					size;
+				if(count===1) {
+					size = 2;
+				} else if(count < 8) {
+					size = 1.5;
+				} else {
+					size = 1;
+				}
+				return size += 'em';
+			},
 			animateLine = function(i,j) {
 				var line = lines[i],
 					$word = $words.find('span.sentence').eq(i).html(line[j]),
 					wordWidth = $word.width();
 				$word.css({
 					left: lineWidth,
-					fontSize: randomRange(1,2)+'em'
+					fontSize: wordsToSize($word)
 				}).animate({
 					left: 0
 				}, 500, function() {
