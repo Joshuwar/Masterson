@@ -259,9 +259,18 @@ span.sentence {
 	margin: auto;
 }
 
+.newgall {
+	width: 760px;
+	margin: auto;
+}
+
 .newgall img {
 	margin-bottom: 20px;
+	width: 150px;
+	height: auto;
 }
+
+
 
 
 #imagecount {
