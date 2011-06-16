@@ -27,7 +27,7 @@ global $words;
 		</div>
 	</div>
 	<?php } else { ?>
-	<div class="right grid6col alignright miniContent">
+	<div class="right grid7col alignright miniContent">
 		<?php if($words) { ?>
 			<div id="words"><?php the_content(); ?></div>
 		<?php } else { ?>
