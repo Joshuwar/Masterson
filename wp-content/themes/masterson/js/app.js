@@ -65,7 +65,7 @@ var HOME_IMAGE_ROTATION_PAUSE = 3000,
 								animateLine(i,j);
 							}, randomRange(300,700));
 						});
-					}, 1000);
+					}, 1500);
 				});
 			};
 		if($words.length) {
