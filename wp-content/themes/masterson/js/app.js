@@ -34,7 +34,7 @@ var HOME_IMAGE_ROTATION_PAUSE = 3000,
 		
 		*/
 		var words = [],
-			$words = $(selector).hide(),
+			$words = $(selector),
 			$word,
 			i = 0,
 			lines = [[],[],[]],

@@ -214,6 +214,10 @@ div#words {
 	height: 180px;
 }
 
+.js #words {
+	display: none;
+}
+
 div.line {
 	height: 60px;
 	width: 100%;
