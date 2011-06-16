@@ -227,8 +227,30 @@ span.sentence {
 	display: none;
 }
 
+/* retrofit image styles */
+
+.img-shadow {
+	float: left;
+    margin: 0px 20px 0 !important; 
+}
+
+.content img {
+	margin-bottom: 0px;
+}
+
+.img-shadow div, .img-shadow p {
+
+	display: inline;
+}
+
 
 /* homepage carousel */
+
+
+.retrogall {
+	width: 760px;
+	margin: auto;
+}
 
 
 #imagecount {
@@ -238,8 +260,8 @@ span.sentence {
 .imagebox {
 	display: table-cell;
 	vertical-align: middle;
-	height: 400px;
-	width: 580px;
+	height: 370px;
+	width: 540px;
 	float: right;
 }
 
