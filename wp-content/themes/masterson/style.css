@@ -252,6 +252,10 @@ span.sentence {
 	margin: auto;
 }
 
+.newgall img {
+	margin-bottom: 20px;
+}
+
 
 #imagecount {
 	display: none;
