@@ -21,13 +21,13 @@ global $words;
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	
 	<?php if(is_front_page()) { ?>
-	<div class="right grid6col aligncenter miniContent">
+	<div class="right grid7col aligncenter miniContent">
 		<div class="imagebox">
 			<?php $count = home_rotate('slideshow-img'); ?>
 		</div>
 	</div>
 	<?php } else { ?>
-	<div class="right grid7col alignright miniContent">
+	<div class="right grid6col alignright miniContent">
 		<?php if($words) { ?>
 			<div id="words"><?php the_content(); ?></div>
 		<?php } else { ?>
