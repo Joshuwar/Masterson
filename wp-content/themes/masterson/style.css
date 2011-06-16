@@ -25,7 +25,7 @@ body {
 }
 
 a, .accentColour {
-	color: #c8df00;
+	color: #ff000c;
 }
 
 #wrapper {
@@ -40,7 +40,7 @@ a, .accentColour {
 
 
 #navContainer {
-	padding-top: 10%;
+	top: 20%;
 	overflow: hidden;
 	padding-bottom: 20px;
 	letter-spacing: 0.1em;
@@ -95,7 +95,7 @@ ul#nav li ul {
 
 ul#nav li a:hover {
 	/*text-decoration: underline;*/
-	color: #c8df00;
+	color: #ff000c;
 }
 
 ul#nav li ul li a {
@@ -239,6 +239,8 @@ span.sentence {
 	display: table-cell;
 	vertical-align: middle;
 	height: 400px;
+	width: 580px;
+	float: right;
 }
 
 .js .imagebox img {
