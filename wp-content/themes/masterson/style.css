@@ -25,7 +25,11 @@ body {
 }
 
 a, .accentColour {
-	color: #ff000c;
+	color: #FF000C;
+}
+
+.unaccented {
+	color: #F2F2F2;
 }
 
 #wrapper {
