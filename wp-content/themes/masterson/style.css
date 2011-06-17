@@ -203,6 +203,10 @@ img.alignnone {
 	width: 1000px;
 }
 
+.miniContent img.alignright.size-medium, .miniContent img.alignright.size-full	{
+	margin-left: 0; /* to undo the 360px */
+}
+
 .content #jwplayer-1-div, .content #jwplayer-2-div, .content #jwplayer-3-div, .content #jwplayer-4-div, .content #jwplayer-5-div {
 	margin-bottom: 20px;
 }
