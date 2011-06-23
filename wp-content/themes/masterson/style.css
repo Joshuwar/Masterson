@@ -167,7 +167,7 @@ img.alignnone {
 .content h3 {
 	font-size: 1.3em;
 	font-weight: 300;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 }
 
 .content h4 {
